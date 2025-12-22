@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications - Srini's Nanoverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #fff;
+    }
+
+    /* Background journal logos */
+    .journal-background {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: space-between;
+      pointer-events: none; /* so clicks go through */
+    }
+
+    .journal-logo {
+      position: absolute;
+      width: 40%; /* make logos large */
+      height: auto;
+      opacity: 0.07; /* subtle watermark effect */
+      filter: grayscale(100%);
+    }
+
+    /* Place each logo in one corner */
+    .top-left {
+      top: 0;
+      left: 0;
+    }
+    .top-right {
+      top: 0;
+      right: 0;
+    }
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: #000; 
+    }
+
+    .pub-card {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 25px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .pub-card a {
+      color: #1e90ff; /* Blue for DOI */
+      text-decoration: none;
+    }
+
+    .pub-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Large fixed journal logos in background -->
+  <div class="journal-background">
+    <img src="assests/icons/plos.JPG" class="journal-logo top-left" alt="PLOS">
+    <img src="assests/icons/springer.JPG" class="journal-logo top-right" alt="SciRep">
+    <img src="assests/icons/nature.png" class="journal-logo bottom-left" alt="Nature">
+    <img src="assests/icons/elsevier.png" class="journal-logo bottom-right" alt="Elsevier">
+  </div>
+
+  <section>
+    <h1>Publications</h1>
+    
+    <div class="pub-card">
+      Gupta, S., Rajan, R.S.S., Vidhya, T. et al. Evaluating the diagnostic significance of biomarkers in ventriculitis through 
+      a multivariate correlation study in a tertiary care center. Sci Rep 15, 33754 (2025). 
+      <a href="https://doi.org/10.1038/s41598-025-97744-31" target="_blank">https://doi.org/10.1038/s41598-025-97744-3</a>
+    </div>
+    
+    <div class="pub-card">
+      Sundara Rajan R, S., Thomas, J., Francis, D. and Daniel, E.C., 2023. 
+      Effective gene delivery using size dependant nano core-shell in human cervical cancer cell lines by magnetofection. 
+      Plos one, 18(9), p.e0289731. 
+      <a href="https://doi.org/10.1371/journal.pone.0289731" target="_blank">https://doi.org/10.1371/journal.pone.0289731</a>
+    </div>
+
+    <div class="pub-card">
+      Sundara Rajan R. Copper surface acts as good surface for biofilm attachment.
+      Asia Pacific Journal of Molecular Biology and Biotechnology. 
+      <a href="https://doi.org/10.35118/apjmbb.2024.032.2.04" target="_blank">https://doi.org/10.35118/apjmbb.2024.032.2.04</a>
+    </div>
+
+    <div class="pub-card">
+      Srinivasa Sundara Rajan R, Challaraj Emmanuel E.S., Rincy P. Benoy, Amjad Hassan Khan M K. 
+      A study on corrosion inhibition by Lactobacillus lactis derived surfactant on Thiobacillus sp.
+    </div>
+    
+    <div class="pub-card">
+      Srinivasa Sundara Rajan R, Arumugasamy K., Poonam Singh, Maruthamuthu S.  
+      Foldscope: A novel paper microscope and its application, Journal of Emerging Technologies and Innovative Research.
+    </div>
+    
+    <div class="pub-card">
+      Challaraj Emmanuel E.S., Srinivasa Sundara Rajan R, Akhil Suresh, Karim Kinwary, Nithish Kumar M, Santosh Ba.  
+      Synthesis of bio-surfactant coated copper nanoparticles.
+    </div>
+
+    <div class="pub-card">
+      Elcey C. Daniel, Samuel Reinhard T., Nidhi Prakash, Srinivasa Sundarajan R., Jobin Thomas.  
+      Synthesis of fluorescent iron oxide nanoparticles, International Journal of Life Sciences and Pharma Research.
+    </div>
+
+  </section>
+
+</body>
+</html>

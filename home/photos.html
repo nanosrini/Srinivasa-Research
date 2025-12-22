@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photos - Srini's Nanoverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #000; /* Black background */
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 30px 0;
+      color: #f5c518; /* Marvel yellow */
+    }
+
+    /* Masonry-style columns */
+    .photo-grid {
+      column-count: 4;   /* number of columns */
+      column-gap: 15px;  /* spacing between columns */
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      margin-bottom: 15px;
+      border: 3px solid #aa0505; /* Marvel red border */
+      border-radius: 10px;
+      display: inline-block; /* important for columns */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #f5c518; /* Glow on hover */
+    }
+
+    /* Responsive design */
+    @media (max-width: 1024px) {
+      .photo-grid {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .photo-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .photo-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Lab Moments</h1>
+
+  <div class="photo-grid">
+    <img src="assests/icons/photo1.jpg" alt="Photo 1">
+    <img src="assests/icons/photo2.jpg" alt="Photo 2">
+    <img src="assests/icons/photo3.jpg" alt="Photo 3">
+    <img src="assests/icons/photo4.jpg" alt="Photo 4">
+    <img src="assests/icons/photo5.jpg" alt="Photo 5">
+    <img src="assests/icons/photo6.jpg" alt="Photo 6">
+    <img src="assests/icons/photo7.JPG" alt="Photo 7">
+    <img src="assests/icons/photo8.JPG" alt="Photo 8">
+    <img src="assests/icons/photo9.jpg" alt="Photo 9">
+    <img src="assests/icons/photo10.jpg" alt="Photo 10">
+    <img src="assests/icons/photo11.jpg" alt="Photo 11">
+    <img src="assests/icons/photo12.jpg" alt="Photo 12">
+    <img src="assests/icons/photo13.jpg" alt="Photo 13">
+    <img src="assests/icons/photo14.jpg" alt="Photo 14">
+    <img src="assests/icons/photo15.jpg" alt="Photo 15">
+
+  </div>
+</body>
+</html>

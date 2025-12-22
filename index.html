@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Srini's Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta name="description" content="Srini's Nanoverse - Research, Publications, and Projects in DNA nanotechnology, microbiome, and biotechnology.">
+  <meta name="keywords" content="Srini, Srini Nanoverse, Nanosrini, Research, DNA nanotechnology, microbiome, biotechnology, publications">
+  <meta name="author" content="Srini">
+  <meta name="google-site-verification" content="kSJyBMVxs7Wr6rJaTvBcQ0ynrt0h2XwRfMpZBPVZx1M" />
+  
+  </head>
+  <body>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      font-family: 'Anton', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .center-screen {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      color: #aa0505;
+      text-shadow: 2px 2px 15px #000000;
+    }
+
+    .enter-btn {
+      padding: 12px 30px;
+      font-size: 20px;
+      background: #aa0505;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      transition: 0.3s;
+    }
+
+    .enter-btn:hover {
+      background: #f5c518;
+      color: black;
+    }
+
+    .portal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      z-index: 100;
+    }
+
+    .portal img {
+      width: 400px;
+      height: auto;
+      mix-blend-mode: screen;
+    }
+
+    .expand {
+      animation: portalExpand 2s ease-in-out forwards;
+    }
+
+    @keyframes portalExpand {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(10);
+        opacity: 1;
+      }
+    }
+
+    .fade-out {
+      animation: fadeOut 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="portal" id="portal">
+    <img id="portalImg" src="/images/portal.gif" alt="Portal Animation" style="width: 100%; height: 100%; opacity: 0;">
+  </div>
+
+  <div class="center-screen" id="mainContent">
+    <h1>Srini's Nanoverse</h1>
+    <button class="enter-btn" onclick="openPortal()">Open Portal</button>
+  </div>
+
+<script>
+  function openPortal() {
+    const portal = document.getElementById("portal");
+    const portalImg = document.getElementById("portalImg");
+    const mainContent = document.getElementById("mainContent");
+
+    portal.style.display = "block";
+    portalImg.style.opacity = "1"; // show immediately
+    mainContent.classList.add("fade-out");
+
+    // Wait before expansion begins
+    setTimeout(() => {
+      portalImg.style.animation = "portalExpand 2s ease-in-out forwards";
+    }, 1900); // 
+
+    // Redirect after delay (wait + expansion)
+    setTimeout(() => {
+      window.location.href = "/home/";
+    }, 2700); // 
+  }
+
+</script>
+</body>
+</html>
