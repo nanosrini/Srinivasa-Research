@@ -107,6 +107,50 @@
       border-radius: 12px;
       border: 1px solid #333;
    }
+
+    /* RESEARCH SECTION */
+
+.research-grid {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.research-card {
+  flex: 1;
+  min-width: 250px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.research-card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.research-card p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cfcfcf;
+  margin: 0;
+}
+
+/* Hide scrollbar */
+.research-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.research-grid {
+  scrollbar-width: none;
+}
+
+    
     /* Buttons (NORMAL – no animation) */
     .enter-btn {
       display: inline-block;
@@ -173,6 +217,16 @@
 .about-image img {
   width: 220px;
   height: 220px;
+}
+  
+  /* MOBILE RESEARCH LAYOUT */
+
+.research-grid {
+  flex-direction: column;
+}
+
+.research-card {
+  width: auto;
 }
   
   /* Sections */
@@ -262,14 +316,44 @@
 
 </section>
 
-  <!-- Research -->
-  <section id="research">
-    <h1>Research</h1>
-    <p>
-      My research journey spans nanoparticle-mediated gene delivery, drinking water biofilms,
-      extraction-free molecular diagnostics, and biomarker discovery using ELISA and NGS.
-    </p>
-    <div class="section-quote">“Learn from your mistakes.”</div>
+ <!-- Research -->
+<section id="research">
+
+  <h1>Research</h1>
+
+  <div class="research-grid">
+
+    <div class="research-card">
+      <h2>Medical Microbiology</h2>
+      <p>
+        Identification of pathogens and biomarkers associated with CNS infections.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <h2>Nanotechnology</h2>
+      <p>
+        Nanoparticle-mediated gene delivery and biosensor applications.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <h2>Clinical Metagenomics</h2>
+      <p>
+        NGS-based approaches for rapid infectious disease diagnostics.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <h2>Bioinformatics & ML</h2>
+      <p>
+        Integrating computational analysis and machine learning in microbiology.
+      </p>
+    </div>
+
+  </div>
+
+</section>
   </section>
 
   <!-- Publications -->
