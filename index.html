@@ -313,14 +313,17 @@ section {
   }
 
   /* Contact */
-  .contact-icons {
-    gap: 24px;
-  }
+  .contact-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
 
-  .contact-link img {
-    width: 42px;
-    height: 42px;
-  }
+/* Google Scholar slightly larger */
+
+.scholar-icon {
+  transform: scale(1.18);
+}
 
 }
   </style>
@@ -503,13 +506,14 @@ section {
         <img src="home/assests/icons/orcid.svg" alt="ORCID">
         ORCID
       </a>
-       <a href="https://scholar.google.com/citations?user=YOUR_ID"
-     target="_blank"
-     class="contact-link">
-    <img src="home/assests/icons/googles.svg" alt="Google Scholar"
-         class="contact-icon" />
-    <p>Google Scholar</p>
-      </a>
+       <a href="https://orcid.org/0000-0001-5626-2841"
+   target="_blank"
+   class="contact-link">
+  <img src="assests/icons/googles.svg"
+       alt="Google Scholar"
+       class="contact-icon scholar-icon">
+  Google Scholar
+</a>
       <a href="https://www.researchgate.net/profile/Srinivasa-Sundara-Rajan-R" class="contact-link">
         <img src="home/assests/icons/researchgate.svg" alt="ResearchGate">
         ResearchGate
